@@ -174,7 +174,7 @@ implements MapEventsListener,
         RelativeLayout layout = (RelativeLayout) findViewById(R.id.rootLayout);
         // Adding the map to the layout
         layout.addView(map, 0);
-        layout.setBackgroundColor(Color.parseColor("#0049FF"));
+        layout.setBackgroundColor(Color.parseColor("#515556"));
         
         // Adding layers in order to put there some map objects
         map.createLayer(LAYER1_ID); // you will need layer id's in order to access particular layer
@@ -295,13 +295,13 @@ implements MapEventsListener,
         map.addMapEventsListener(this); 
         
         // In order to receive map scroll events we set OnMapScrollListener
-        map.setOnMapScrolledListener(new OnMapScrollListener()
-        {
-            public void onScrolledEvent(MapWidget v, MapScrolledEvent event)
-            {
-                handleOnMapScroll(v, event);
-            }
-        });
+		map.setOnMapScrolledListener(new OnMapScrollListener()
+		{
+			public void onScrolledEvent(MapWidget v, MapScrolledEvent event)
+			{
+				handleOnMapScroll(v, event);
+			}
+		});
         
         
         map.setOnLocationChangedListener(new OnLocationChangedListener() {
