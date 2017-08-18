@@ -1,8 +1,11 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Image TileSize="256" Overlap="1" Format="png" >
-	<Size Width="1536" Height="768" />
-	<CalibrationRect>
-		<Point x="1006" y="141" lat="3.214993635535601" lon="73.03810715675354" topLeft="1"/>
-		<Point x="1240" y="582" lat="3.211265870063092" lon="73.03981840610504"/>
-	</CalibrationRect>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Image Format="png" Overlap="1" TileSize="256">
+
+    <Size Height="5793" Width="8323"/>
+
+    <CalibrationRect>
+        <Point x="15" y="15" lat="31.3195490000" lon="121.4023280000" topLeft="1"/>
+        <Point x="8299" y="5799" lat="31.2442470000" lon="121.5056690000"/>
+    </CalibrationRect>
+
 </Image>

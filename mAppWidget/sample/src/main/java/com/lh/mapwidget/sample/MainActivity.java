@@ -116,8 +116,8 @@ public class MainActivity extends AppCompatActivity implements OnMapTouchListene
         layer.addMapObject(poiSport);
 
         Location location = new Location("");
-        location.setLatitude(3.2127012756213316);
-        location.setLongitude(73.03406774997711);
+        location.setLatitude(31.3068380000);
+        location.setLongitude(121.4648500000);
 
         poiSport.moveTo(location);
 

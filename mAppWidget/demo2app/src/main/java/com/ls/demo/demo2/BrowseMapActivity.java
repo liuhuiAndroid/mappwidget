@@ -109,25 +109,29 @@ implements MapEventsListener,
 
     private void initTestLocationPoints() 
 	{
-		points = new Location[5];
+		points = new Location[2];
 		for (int i=0; i<points.length; ++i) {
 			points[i] = new Location("test");
 		}
 		
-		points[0].setLatitude(3.2127012756213316);
-		points[0].setLongitude(73.03406774997711);
+		points[0].setLatitude(3.214993635535601);
+		points[0].setLongitude(73.03810715675354);
 		
-		points[1].setLatitude(3.2122245926560167);
-		points[1].setLongitude(73.03744733333588);
+		points[1].setLatitude(3.211265870063092);
+		points[1].setLongitude(73.03981840610504);
 		
-		points[2].setLatitude(3.2112819380469135);
-		points[2].setLongitude(73.03983449935913);
-		
-		points[3].setLatitude(3.2130494147249915);
-		points[3].setLongitude(73.03946435451508);
-		
-		points[4].setLatitude(3.2148276002942713);
-		points[4].setLongitude(73.03796768188477);
+//		points[2].setLatitude(3.2112819380469135);
+//		points[2].setLongitude(73.03983449935913);
+//
+//		points[3].setLatitude(3.2130494147249915);
+//		points[3].setLongitude(73.03946435451508);
+//
+//		points[4].setLatitude(3.2148276002942713);
+//		points[4].setLongitude(73.03796768188477);
+//
+//		points[5].setLatitude(3.214993635535601);
+//		points[5].setLongitude(73.03810715675354);
+
 		
 		currentPoint = 0;
 	}
@@ -185,11 +189,12 @@ implements MapEventsListener,
 	private void initModel()
 	{
 		// Adding objects to the model
-		// You may want to implement your own model 
-		MapObjectModel objectModel = new MapObjectModel(0, 100, 100, "Shows above the image 1");
-		model.addObject(objectModel);
-		objectModel = new MapObjectModel(1, 600, 350, "Shows above the image 2");
-		model.addObject(objectModel);
+		// You may want to implement your own model
+		MapObjectModel objectModel;
+//		MapObjectModel objectModel = new MapObjectModel(0, 100, 100, "Shows above the image 1");
+//		model.addObject(objectModel);
+//		objectModel = new MapObjectModel(1, 600, 350, "Shows above the image 2");
+//		model.addObject(objectModel);
 		
 		int id = 2;
 		for (Location point:points) {
